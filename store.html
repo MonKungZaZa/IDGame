@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ร้านขาย ID เกม</title>
+  <link rel="stylesheet" href="store.css" />
+</head>
+<body>
+  <h1>ร้านขายไอดีเกม</h1>
+  <p id="welcomeUser">ยินดีต้อนรับ</p>
+  <button onclick="logout()">ออกจากระบบ</button>
+
+  <h2>สินค้า</h2>
+  <div id="productList"></div>
+
+  <h2>ตะกร้าสินค้า</h2>
+  <div id="cart"></div>
+  <p>รวมราคา: <span id="totalPrice">0</span> 🪙</p>
+  <button onclick="checkout()">ซื้อสินค้า</button>
+
+  <script src="data.js"></script>
+  <script src="store.js"></script>
+</body>
+</html>
