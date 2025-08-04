@@ -1,0 +1,36 @@
+
+body {
+  font-family: "Prompt", sans-serif;
+  background-color: #e8f5e9; /* เขียวอ่อน */
+  text-align: center;
+  padding: 50px;
+}
+
+.logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #2e7d32; /* เขียวเข้ม */
+  margin-bottom: 30px;
+}
+
+.btn {
+  background-color: #4caf50; /* เขียวหลัก */
+  color: white;
+  padding: 12px 30px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #388e3c; /* เขียวเข้มตอน hover */
+}
+
+
+

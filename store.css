@@ -13,7 +13,7 @@ body {
 }
 
 .product img {
-  max-width: 100%;
+  max-width: 120px;
   height: 120px;
   object-fit: cover;
 }
