@@ -1,4 +1,3 @@
-
 body {
   font-family: "Prompt", sans-serif;
   font-size: 18px;
@@ -8,7 +7,7 @@ body {
       rgba(232, 245, 233, 0.7), 
       rgba(232, 245, 233, 0.7)
     ),
-    url('https://www.icegif.com/wp-content/uploads/2021/11/icegif-1285.gif'); /* เปลี่ยน GIF ที่ต้องการ */
+    url('https://www.icegif.com/wp-content/uploads/2021/11/icegif-1296.gif'); /* เปลี่ยน GIF ที่ต้องการ */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -48,6 +47,7 @@ input:focus {
   border-color: #af4c8e;
   box-shadow: 0 0 5px #c767a7;
 }
+
 
 .btn {
   background-color: #af4c8e; 
