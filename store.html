@@ -3,21 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ร้านขาย ID เกม</title>
+  <title>IDGameStore</title>
   <link rel="stylesheet" href="store.css" />
 </head>
 <body>
-  <h1>ร้านขายไอดีเกม</h1>
-  <p id="welcomeUser">ยินดีต้อนรับ</p>
-  <button onclick="logout()">ออกจากระบบ</button>
+  <!-- ปกแบนเนอร์ -->
+  <header class="banner">
+    <h1>IDGameStore</h1>
+    <p id="welcomeUser" class="welcome-text">ยินดีต้อนรับ</p>
+    <button onclick="logout()" class="btn">ออกจากระบบ</button>
+  </header>
 
-  <h2>สินค้า</h2>
-  <div id="productList"></div>
+<main>
+  <!-- สินค้า -->
+  <section class="product-section">
+    <h2>สินค้าทั้งหมด</h2>
+    <div id="productList" class="product-grid"></div>
+  </section>
 
-  <h2>ตะกร้าสินค้า</h2>
-  <div id="cart"></div>
-  <p>รวมราคา: <span id="totalPrice">0</span> 🪙</p>
-  <button onclick="checkout()">ซื้อสินค้า</button>
+  <!-- ตะกร้าสินค้า -->
+  <section class="cart-section">
+    <h2>ตะกร้าสินค้า</h2>
+    <div id="cart"></div>
+    <p>รวมราคา: <span id="totalPrice">0</span> 🪙</p>
+    <button onclick="checkout()" class="btn">ซื้อสินค้า</button>
+  </section>
+</main>
+
+<footer class="footer">
+  <img src="https://media.tenor.com/30ktrPk69wAAAAAM/anime.gif" alt="gift" style="height:40px; vertical-align:middle;">
+  <span>© 2025 ID Game Store | ติดต่อเรา: idgamestore@gmail.com</span>
+  <img src="https://www.pngall.com/wp-content/uploads/15/Zero-Two-PNG-Free-Image.png" alt="character" class="floating-character">
+</footer>
 
   <script src="data.js"></script>
   <script src="store.js"></script>

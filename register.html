@@ -1,18 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
   <meta charset="UTF-8">
   <title>สมัครสมาชิก</title>
+  <link rel="stylesheet" href="register.css">
 </head>
 <body>
+  <!-- โลโก้ -->
+  <img class="logo" src="https://www.asiamediajournal.com/wp-content/uploads/2022/11/Darling-In-The-Franxx-Zero-Two-PFP-300x300.jpg" alt="โลโก้เว็บไซต์">
+
   <h2>สมัครสมาชิก</h2>
   <form id="registerForm">
     <input type="text" id="username" placeholder="Username" required /><br />
     <input type="password" id="password" placeholder="Password" required /><br />
-    <button onclick="location.href='index.html'">สมัครสมาชิก</button>
+    <input type="email" id="email" placeholder="Email" required /><br />
+    <button type="submit" class="btn">สมัครสมาชิก</button>
   </form>
-<button onclick="location.href='index.html'">กลับหน้าแรก</button>
+
+  <button class="btn secondary" onclick="location.href='index.html'">กลับหน้าแรก</button>
 
   <script src="register.js"></script>
+
+  <footer class="footer">
+    <p>© 2025 ID Game Store | ติดต่อเรา: idgamestore@gmail.com</p>
+  </footer>
 </body>
 </html>

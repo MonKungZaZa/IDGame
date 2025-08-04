@@ -3,10 +3,10 @@ const fs = require("fs");
 const app = express();
 const PORT = 3000;
 
-app.use(express.static(".")); // serve static files
+app.use(express.static(".")); 
 app.use(express.json());
 
-// สมัครสมาชิก
+// ระบบสมัครสมาชิก
 app.post("/register", (req, res) => {
   const { username, password } = req.body;
 
@@ -25,7 +25,7 @@ app.post("/register", (req, res) => {
   res.json({ success: true });
 });
 
-// ล็อกอิน
+// ระบบล็อกอิน
 app.post("/login", (req, res) => {
   const { username, password } = req.body;
   let users = [];

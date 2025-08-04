@@ -1,23 +1,39 @@
-
 body {
   font-family: "Prompt", sans-serif;
-  background-color: #e8f5e9; /* เขียวอ่อน */
+  font-size: 32px;
+  text-size-adjust: auto;
+  text-shadow: #000000;
+  background: linear-gradient(
+      rgba(232, 245, 233, 0.7), 
+      rgba(232, 245, 233, 0.7)
+    ),
+    url('https://media.tenor.com/30ktrPk69wAAAAAM/anime.gif'); /* เปลี่ยน GIF ที่ต้องการ */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: lighten; 
   text-align: center;
-  padding: 50px;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; 
 }
-
+/* โลโก้ */
 .logo {
-  width: 150px;
+  max-width: 200px; 
+  width: 100%;      
+  margin-top: 50px;
+  height: auto;     
   margin-bottom: 20px;
 }
 
+
 h2 {
-  color: #2e7d32; /* เขียวเข้ม */
+  color: #af4c8e; 
   margin-bottom: 30px;
 }
 
 .btn {
-  background-color: #4caf50; /* เขียวหลัก */
+  background-color: #af4c8e; 
   color: white;
   padding: 12px 30px;
   margin: 10px;
@@ -29,8 +45,37 @@ h2 {
 }
 
 .btn:hover {
-  background-color: #388e3c; /* เขียวเข้มตอน hover */
+  background-color: #8e3859; /* เข้มตอน hover */
 }
 
+/* ปกแบนเนอร์ */
+.banner {
+  position: relative;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 40px 10px;
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+              url('https://i.pinimg.com/originals/98/16/55/981655dc367f9409ea40331961f065ac.gif') no-repeat center center/cover;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  user-select: none;
+}
 
+.floating-character {     /* Anime ลอย */
+  position: absolute;      
+  right: 40px;             
+  bottom: 0;               
+  height: 400px;           
+  z-index: 10;
+  pointer-events: none;    
+  user-select: none;
+}
 
+.footer {
+  background-color: #af4c8e;
+  color: white;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.2);
+}

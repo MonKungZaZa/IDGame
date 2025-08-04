@@ -33,7 +33,7 @@ function addToCart(productId) {
 function renderProducts() {
   const container = document.getElementById("productList");
   container.innerHTML = "";
-  products.forEach(p => {
+  products.forEach((p, idx) => {
     const div = document.createElement("div");
     div.className = "product";
     div.innerHTML = `
@@ -42,9 +42,23 @@ function renderProducts() {
       <p>ราคา: ${p.price} เหรียญ</p>
       <p>จำนวน: ${p.stock} ชิ้น</p>
       <button onclick="addToCart(${p.id})" ${p.stock === 0 ? "disabled" : ""}>ใส่ตะกร้า</button>
+      <button class="detail-btn" onclick="toggleDetail(${idx})">ดูรายละเอียด</button>
+      <div class="product-detail" id="detail-${idx}" style="display:none;">
+        <p>${p.description || "ไม่มีรายละเอียด"}</p>
+      </div>
     `;
     container.appendChild(div);
   });
+}
+
+// เพิ่มฟังก์ชันนี้ไว้ด้านนอก
+function toggleDetail(idx) {
+  const detail = document.getElementById(`detail-${idx}`);
+  if (detail.style.display === "none") {
+    detail.style.display = "block";
+  } else {
+    detail.style.display = "none";
+  }
 }
 
 function renderCart() {
